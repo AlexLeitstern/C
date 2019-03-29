@@ -1,1 +1,16 @@
+#include <stdio.h>
 
+int main () {
+    
+    int a, b, c;
+    
+    b = 100;
+    
+    scanf( "%d", &a);
+    
+    c = a + b;
+    
+    printf("Your age in 100 years is %d\n", c);
+    
+    return 0;
+}
