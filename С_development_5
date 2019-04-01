@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main () {
+    
+    int a;
+    scanf("%d", &a);
+    switch (a) {
+    case 100:
+    printf("good");
+    break;
+    case 300:
+    printf("perfect!");
+    break;
+    default:
+    printf("not ok");
+    }
+    return 0;
+}
