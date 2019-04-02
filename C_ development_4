@@ -1,14 +1,22 @@
 #include <stdio.h>
-
+int factorial (int n)
+{
+if (0 == n)
+return 1;
+return factorial (n - 1) * n;
+}
 int main () {
     
     int number1, number2, number3;
     
     scanf( "%d", &number1);
     
-   if (number1 < 100) {
+  if (number1 < 100) {
        printf("less then 100\n");
-       if (number1 < 50) printf("Wow");
+       if (number1 < 50) printf("Very small number, check function please:\n");
+       int n;
+       scanf("%d", &n);
+       printf("factorial %d = %d\n", n, factorial);
    } 
    else if (number1 == 100) {
        printf("Perfect!");
